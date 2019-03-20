@@ -1,6 +1,6 @@
 package com.TeTraedr.Calculator;
 
-@SuppressWarnings("ALL")
+
 public class Help_Methods {
 
 
@@ -108,9 +108,9 @@ public class Help_Methods {
         return new Object[]{farray, sarray};
     }
 
-    public boolean checkConditionSign(char sign){
+    public boolean checkConditionSign(char sign) {
         if (sign == '+' || sign == '-' || sign == '*' || sign == '/') return true;
-        else  return false;
+        else return false;
     }
 
 

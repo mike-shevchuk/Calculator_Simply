@@ -54,13 +54,13 @@ public class Calculator {
 
         if (pos == -1) return -1;
 
-        f=example.substring(0,pos);
-        s=example.substring(pos+1);
+        f = example.substring(0, pos);
+        s = example.substring(pos + 1);
 
         return new Operators().compute(Float.parseFloat(f), Float.parseFloat(s), array[pos]);
     }
 
-    private int[] countSign(String str) {
+    private int[] crtArray_posSign(String str) {
         Help_Methods hlp = new Help_Methods();
         char[] chars = str.toCharArray();
 
@@ -82,9 +82,8 @@ public class Calculator {
     }
 
     private float[] arrFromNumber(int[] array, String example) {
-        Help_Methods hlp = new Help_Methods();
         char[] ex = example.toCharArray();
-        float[] countNumber = new float[array.length + 1];
+        float[] numbers = new float[array.length + 1];
         String number;
         for (int i = 0; i <= array.length; i++) {
             if (i == 0) {//for first number
@@ -113,14 +112,14 @@ public class Calculator {
                     number += ex[j];
                 }
             }
-            countNumber[i] = Float.parseFloat(number);//   System.out.println("Число -->"+countNumber[i]);
+            numbers[i] = Float.parseFloat(number);//   System.out.println("Число -->"+countNumber[i]);
         }
-        return countNumber;
+        return numbers;
     }
 
 
     private float gear4(String example) {
-        int[] array = countSign(example);
+        int[] array = crtArray_posSign(example);
         float[] arrayNum = arrFromNumber(array, example);
         char[] arraySign = new Help_Methods().giveSign(array, example);
         if (arraySign.length <= 1) return split(example);
@@ -131,7 +130,7 @@ public class Calculator {
 
     private float gear5(String example) {
         Help_Methods hlp = new Help_Methods();
-        int[] array = countSign(example);
+        int[] array = crtArray_posSign(example);
         float[] arrayNum = arrFromNumber(array, example);
         char[] arraySign = hlp.giveSign(array, example);
         Priority_Of_Processing piop = new Priority_Of_Processing(arrayNum, arraySign);
@@ -162,9 +161,9 @@ public class Calculator {
             System.out.println(op);
 
         }
-    
+
         if (((int[]) hlp.Brackets(op)[0]).length == ((int[]) hlp.Brackets(op)[1]).length) isBrackets = true;
-        if (arrFromNumber(countSign(op), op).length == countSign(op).length + 1) isCountSign = true;
+        if (arrFromNumber(crtArray_posSign(op), op).length == crtArray_posSign(op).length + 1) isCountSign = true;
 
         if ((isBrackets) && (isCountSign)) {
             //all okay

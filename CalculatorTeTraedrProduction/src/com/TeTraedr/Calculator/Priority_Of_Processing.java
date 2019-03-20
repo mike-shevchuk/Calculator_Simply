@@ -21,7 +21,7 @@ public class Priority_Of_Processing {
                 aN = hlp.delPos(aN, i);
                 aS = hlp.delPos(aS, i);
             }
-        return  new Calculator().gear_1(aN, aS);
+        return new Calculator().gear_1(aN, aS);
     }
 
     public float result(String op) {
