@@ -23,7 +23,5 @@ public class Window {
     private JButton buttonclearall;
     private JButton buttonclear;
 
-    public static void main(String[] args) {
-        new Window();
-    }
+
 }
