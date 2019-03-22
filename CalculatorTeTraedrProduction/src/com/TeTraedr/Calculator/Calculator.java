@@ -182,4 +182,8 @@ public class Calculator {
         return gear4(op);
     }
 
+    public float start(String op) {
+        return gear5(op);
+    }
+
 }
