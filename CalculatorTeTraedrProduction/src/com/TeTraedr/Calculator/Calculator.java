@@ -19,7 +19,7 @@ public class Calculator {
         Scanner in = new Scanner(System.in);
         if (example.length() == 0) {
             System.out.println("Введіть приклад");
-               example="115-14+-4/2--11*11";
+            example = "115-14+-4/2--11*11";
             System.out.println(example);
         }
         return gear4(example);
@@ -29,7 +29,7 @@ public class Calculator {
         Scanner in = new Scanner(System.in);
         if (example.length() == 0) {
             System.out.println("Введіть приклад");
-        //   example = "(2*((3+6+1)+(2+2)))*4+(2+5+-4*4)";
+            //   example = "(2*((3+6+1)+(2+2)))*4+(2+5+-4*4)";
             example = in.nextLine();
             System.out.println(example);
 
@@ -156,7 +156,14 @@ public class Calculator {
     }
 
     public float start(String op) {
+
         return gear5(op);
+    }
+
+    private String checkexample(String example) {
+
+
+        return example;
     }
 
 }

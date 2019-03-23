@@ -12,7 +12,8 @@ class Windows implements ActionListener {
 
     JFrame frame = new JFrame();
     JPanel panel = new JPanel();
-    JTextArea textarea = new JTextArea(3, 10);
+    JTextArea textarea = new JTextArea(2, 10);
+    JTextArea textarea2 = new JTextArea(1, 10);
     JScrollPane scroll = new JScrollPane(textarea);
 
     JButton button0 = new JButton();
@@ -42,7 +43,7 @@ class Windows implements ActionListener {
 
 
     public Windows() {
-        frame.setSize(340, 450);
+        frame.setSize(340, 475);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setTitle("Calculator");
@@ -54,23 +55,53 @@ class Windows implements ActionListener {
         panel.setBackground(Color.GRAY);
         Border border = BorderFactory.createLineBorder(Color.GREEN, 5);
 
-
+        panel.add(textarea2);
         panel.add(textarea);
         panel.setBorder(border);
 
-        textarea.add(scroll);
+
+        textarea2.setBackground(Color.BLACK);
+        textarea2.setToolTipText("Press 'Enter'");
+        textarea2.setVisible(true);
+
         textarea.setBackground(Color.BLACK);
         textarea.setToolTipText("Press 'Enter'");
         textarea.setVisible(true);
 
         Border tborder = BorderFactory.createLineBorder(Color.ORANGE, 1);
         textarea.setBorder(tborder);
+        textarea2.setBorder(tborder);
         Font font = new Font("Arial", Font.BOLD, 33);
         textarea.setFont(font);
+        textarea2.setFont(font);
         textarea.setForeground(Color.GREEN);
-
+        textarea2.setForeground(Color.GREEN);
         textarea.setPreferredSize(new Dimension(2, 10));
+        textarea2.setPreferredSize(new Dimension(2, 10));
         textarea.setLineWrap(true);
+        textarea2.setLineWrap(true);
+
+
+        panel.add(button1);
+        panel.add(button2);
+        panel.add(button3);
+        panel.add(buttonclear);
+        panel.add(button4);
+        panel.add(button5);
+        panel.add(button6);
+        panel.add(buttonadd);
+        panel.add(buttonsub);
+        panel.add(button7);
+        panel.add(button8);
+        panel.add(button9);
+        panel.add(buttonmul);
+        panel.add(buttondiv);
+        panel.add(buttonLeftbracket);
+        panel.add(button0);
+        panel.add(buttonRightbracket);
+        panel.add(buttondot);
+        panel.add(buttonequal);
+        panel.add(buttonca);
 //        String dir = "..\\..\\res";
         String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
 //        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
@@ -173,28 +204,6 @@ class Windows implements ActionListener {
         buttonRightbracket.setBackground(Color.RED);
 
 
-        panel.add(button1);
-        panel.add(button2);
-        panel.add(button3);
-        panel.add(buttonclear);
-        panel.add(button4);
-        panel.add(button5);
-        panel.add(button6);
-        panel.add(buttonadd);
-        panel.add(buttonsub);
-        panel.add(button7);
-        panel.add(button8);
-        panel.add(button9);
-        panel.add(buttonmul);
-        panel.add(buttondiv);
-        panel.add(buttonLeftbracket);
-        panel.add(button0);
-        panel.add(buttonRightbracket);
-        panel.add(buttondot);
-        panel.add(buttonequal);
-        panel.add(buttonca);
-
-
         button0.addActionListener(this);
         button1.addActionListener(this);
         button2.addActionListener(this);
@@ -220,7 +229,11 @@ class Windows implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
-        if (source == buttonca) textarea.setText("");
+        if (source == buttonca) {
+            textarea.setText("");
+            textarea2.setText("");
+            buttonca.setBackground(Color.YELLOW);
+        }
         if (source == button0) textarea.append("0");
         if (source == button1) textarea.append("1");
         if (source == button2) textarea.append("2");
@@ -239,24 +252,25 @@ class Windows implements ActionListener {
         if (source == buttonmul) textarea.append("*");
         if (source == buttondiv) textarea.append("/");
         if (source == buttonclear)
-            if (textarea.getText().length()>0){
+            if (textarea.getText().length() > 0) {
 //                textarea.append(String.valueOf(textarea.getText().length()-2));
                 try {
-                    textarea.setText(textarea.getText(0,(textarea.getText().length()-1)));
+                    textarea.setText(textarea.getText(0, (textarea.getText().length() - 1)));
                 } catch (BadLocationException e1) {
                     e1.printStackTrace();
                 }
-                textarea.remove(textarea.getText().length()-2);
-        }
+                textarea.remove(textarea.getText().length() - 2);
+            }
         if (source == buttonequal) {
-            String op=textarea.getText();
+            String op = textarea.getText();
 
             Calculator cl = new Calculator();
 
             textarea.append("=");
             textarea.append(Float.toString(cl.start(op)));
-            if (source == new Button())  textarea.setText("");
-           textarea.append("\n Очистіть Екран");
+            textarea2.setText("");
+            textarea2.append(" Очистіть Екран");
+            buttonca.setBackground(Color.magenta);
 
 
         }
