@@ -5,5 +5,6 @@ public class Main {
         Calculator c = new Calculator();
        // System.out.println("Відповідь " + c.test5());
         new Windows();
+    //    System.out.println(c.test5());
     }
 }

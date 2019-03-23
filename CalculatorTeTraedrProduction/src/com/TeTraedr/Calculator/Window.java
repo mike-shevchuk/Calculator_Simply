@@ -2,6 +2,7 @@ package com.TeTraedr.Calculator;
 
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.text.BadLocationException;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -70,8 +71,9 @@ class Windows implements ActionListener {
 
         textarea.setPreferredSize(new Dimension(2, 10));
         textarea.setLineWrap(true);
-
-        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
+//        String dir = "..\\..\\res";
+        String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
+//        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
 
         button0.setPreferredSize(new Dimension(50, 50));
         button0.setIcon(new ImageIcon(dir + "\\icons-0.png"));
@@ -212,6 +214,7 @@ class Windows implements ActionListener {
         buttonsub.addActionListener(this);
         buttonmul.addActionListener(this);
         buttondiv.addActionListener(this);
+        buttonclear.addActionListener(this);
 
     }
 
@@ -235,6 +238,16 @@ class Windows implements ActionListener {
         if (source == buttonsub) textarea.append("-");
         if (source == buttonmul) textarea.append("*");
         if (source == buttondiv) textarea.append("/");
+        if (source == buttonclear)
+            if (textarea.getText().length()>0){
+//                textarea.append(String.valueOf(textarea.getText().length()-2));
+                try {
+                    textarea.setText(textarea.getText(0,(textarea.getText().length()-1)));
+                } catch (BadLocationException e1) {
+                    e1.printStackTrace();
+                }
+                textarea.remove(textarea.getText().length()-2);
+        }
         if (source == buttonequal) {
             String op=textarea.getText();
 
@@ -242,8 +255,8 @@ class Windows implements ActionListener {
 
             textarea.append("=");
             textarea.append(Float.toString(cl.start(op)));
-
-           // textarea.append("\n"+textarea.getText());
+            if (source == new Button())  textarea.setText("");
+           textarea.append("\n Очистіть Екран");
 
 
         }

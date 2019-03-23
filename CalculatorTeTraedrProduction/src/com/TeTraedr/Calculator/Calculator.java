@@ -19,8 +19,7 @@ public class Calculator {
         Scanner in = new Scanner(System.in);
         if (example.length() == 0) {
             System.out.println("Введіть приклад");
-            //   example="115-14+-4/2--11*11";
-            example = in.nextLine();
+               example="115-14+-4/2--11*11";
             System.out.println(example);
         }
         return gear4(example);
@@ -30,10 +29,9 @@ public class Calculator {
         Scanner in = new Scanner(System.in);
         if (example.length() == 0) {
             System.out.println("Введіть приклад");
-            example = "(2*((3+6+1)+(2+2)))*4+(2+5+-4*4)";
-            //example = in.nextLine();
+        //   example = "(2*((3+6+1)+(2+2)))*4+(2+5+-4*4)";
+            example = in.nextLine();
             System.out.println(example);
-            example = checkExample(example);
 
         }
         return gear5(example);
@@ -133,8 +131,9 @@ public class Calculator {
         int[] array = crtArray_posSign(example);
         float[] arrayNum = arrFromNumber(array, example);
         char[] arraySign = hlp.giveSign(array, example);
+        if (arraySign.length == 1) return split(example);
         Priority_Of_Processing piop = new Priority_Of_Processing(arrayNum, arraySign);
-        if (arraySign.length == 1) return piop.priority();
+
         return piop.result(example);
     }
 
@@ -146,32 +145,6 @@ public class Calculator {
             else result = new Operators().compute(result, arrayNum[n], arraySign[i]);
         }
         return result;
-    }
-
-    private String checkExample(String op) {
-        Help_Methods hlp = new Help_Methods();
-        boolean isBrackets = false;
-        boolean isCountSign = false;
-
-
-        char[] carray = op.toCharArray();
-        if ((carray[0] == '(' && carray[op.length() - 1] == ')') &&
-                (((int[]) hlp.Brackets(example)[0]).length == ((int[]) hlp.Brackets(example)[1]).length) && ((int[]) hlp.Brackets(example)[0]).length == 1) {
-            op = hlp.cutStr(op, 0, op.length() - 1);
-            System.out.println(op);
-
-        }
-
-        if (((int[]) hlp.Brackets(op)[0]).length == ((int[]) hlp.Brackets(op)[1]).length) isBrackets = true;
-        if (arrFromNumber(crtArray_posSign(op), op).length == crtArray_posSign(op).length + 1) isCountSign = true;
-
-        if ((isBrackets) && (isCountSign)) {
-            //all okay
-            System.out.println("isCountSign-->" + isCountSign);
-            System.out.println("isBrackets-->" + isBrackets);
-        } else throw new ArithmeticException();
-
-        return op;
     }
 
     public float gear_1(float[] arrayN, char[] arrayC) {
