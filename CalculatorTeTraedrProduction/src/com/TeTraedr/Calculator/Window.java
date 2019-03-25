@@ -266,7 +266,9 @@ class Windows implements ActionListener {
             }
         if (source == buttonequal) {
             String op = textarea.getText();
-
+            if (op !=new Help_Methods().checkexample(op)){
+                textarea2.setText(new Help_Methods().checkexample(op));
+            }
             Calculator cl = new Calculator();
 
             textarea.append("=");

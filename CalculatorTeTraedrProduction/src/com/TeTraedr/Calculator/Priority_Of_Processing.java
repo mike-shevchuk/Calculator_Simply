@@ -24,14 +24,14 @@ public class Priority_Of_Processing {
         return new Calculator().gear_1(aN, aS);
     }
 
-    public float result(String op) {
+    public float result(String op){
         Calculator calc = new Calculator();
         Help_Methods hlp = new Help_Methods();
         String r = brakeBrackets(op, (int[]) hlp.Brackets(op)[0], (int[]) hlp.Brackets(op)[1]);
         return calc.gear_2(r);
     }
 
-    private String brakeBrackets(String op, int[] openBrackets, int[] closeBrackets) {
+    private String brakeBrackets(String op, int[] openBrackets, int[] closeBrackets)  {
         Help_Methods hlp = new Help_Methods();
         Calculator calc = new Calculator();
         int[] farray = openBrackets;

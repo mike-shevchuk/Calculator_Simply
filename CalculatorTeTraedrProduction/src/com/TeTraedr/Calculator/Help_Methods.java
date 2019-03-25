@@ -105,7 +105,14 @@ public class Help_Methods {
                 if (Cop[i] == ')') count2++;
             }
         if (count1 == count2) length = count1;
-        else System.out.println("Faul");
+        else if (count1>count2){
+            System.out.println("Faul");
+            return new Object[0];
+        }
+        else if (count1<count2){
+            System.out.println("Faul");
+            return new Object[0];
+        }
         int[] farray = new int[length];
         int[] sarray = new int[length];
         for (int i = 0, f = 0, s = 0; i < op.length(); i++) {
@@ -122,6 +129,26 @@ public class Help_Methods {
         else return false;
     }
 
+
+
+    public String checkexample(String example) {
+        Help_Methods hlp = new Help_Methods();
+        char[] c = example.toCharArray();
+        if (c[0] == '(' && c[example.length() - 1] == ')') {
+            example = example.substring(1, example.length() - 1);
+            return example;
+        }
+
+
+        if (hlp.Brackets(example).length == 0){
+            return "Помилка в дужках";
+        }
+
+
+
+
+        return example;
+    }
 
 }
 
