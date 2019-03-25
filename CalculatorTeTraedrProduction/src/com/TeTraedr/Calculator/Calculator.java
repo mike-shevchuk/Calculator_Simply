@@ -31,7 +31,7 @@ public class Calculator {
             System.out.println("Введіть приклад");
             //   example = "(2*((3+6+1)+(2+2)))*4+(2+5+-4*4)";
             example = in.nextLine();
-            System.out.println(example);
+ //           System.out.println(example);
 
         }
         return gear5(example);
@@ -107,6 +107,7 @@ public class Calculator {
             } else {//if is only two number on example
                 number = "";
                 for (int j = array[i - 1] + 1; j < example.length(); j++) {
+                    if (ex[j] != ')' && ex[j] != '(')
                     number += ex[j];
                 }
             }
@@ -131,7 +132,8 @@ public class Calculator {
         int[] array = crtArray_posSign(example);
         float[] arrayNum = arrFromNumber(array, example);
         char[] arraySign = hlp.giveSign(array, example);
-        if (arraySign.length == 1) return split(example);
+       example = checkexample(example);
+     //   if (arraySign.length == 1) return split(example);
         Priority_Of_Processing piop = new Priority_Of_Processing(arrayNum, arraySign);
 
         return piop.result(example);
@@ -161,8 +163,11 @@ public class Calculator {
     }
 
     private String checkexample(String example) {
-
-
+        Help_Methods hlp = new Help_Methods();
+        char[] c = example.toCharArray();
+        if (c[0] == '(' &&  c[example.length()-1]== ')') {
+          example=  example.substring(1, example.length() - 1);
+        }
         return example;
     }
 

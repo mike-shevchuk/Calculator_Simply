@@ -103,8 +103,8 @@ class Windows implements ActionListener {
         panel.add(buttonequal);
         panel.add(buttonca);
 //        String dir = "..\\..\\res";
-        String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
-//        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
+ //       String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
+        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
 
         button0.setPreferredSize(new Dimension(50, 50));
         button0.setIcon(new ImageIcon(dir + "\\icons-0.png"));
@@ -231,7 +231,7 @@ class Windows implements ActionListener {
         Object source = e.getSource();
         if (source == buttonca) {
             textarea.setText("");
-            textarea2.setText("");
+            textarea2.setText("Введіть приклад");
             buttonca.setBackground(Color.YELLOW);
         }
         if (source == button0) textarea.append("0");
@@ -259,7 +259,10 @@ class Windows implements ActionListener {
                 } catch (BadLocationException e1) {
                     e1.printStackTrace();
                 }
-                textarea.remove(textarea.getText().length() - 2);
+                if (textarea.getText().length() == 0) {
+                    textarea2.setText("Введіть приклад");
+                    buttonca.setBackground(Color.YELLOW);
+                }
             }
         if (source == buttonequal) {
             String op = textarea.getText();

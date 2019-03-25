@@ -12,6 +12,15 @@ public class Help_Methods {
         System.out.println("]");
     }
 
+
+    public void print_array(int[] array) {
+        System.out.print("[ ");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(" " + array[i] + " ");
+        }
+        System.out.println("]");
+    }
+
     public void print_array(char[] array) {
         System.out.print("[ ");
         for (int i = 0; i < array.length; i++) {
