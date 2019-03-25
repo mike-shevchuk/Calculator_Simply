@@ -132,8 +132,8 @@ public class Calculator {
         int[] array = crtArray_posSign(example);
         float[] arrayNum = arrFromNumber(array, example);
         char[] arraySign = hlp.giveSign(array, example);
-        example = hlp.checkexample(example);
-        System.out.println(example);
+        example = hlp.controlexample(example);
+//        System.out.println(example);
         Priority_Of_Processing piop = new Priority_Of_Processing(arrayNum, arraySign);
 
             return piop.result(example);
@@ -161,6 +161,17 @@ public class Calculator {
     public float start(String op) {
 
         return gear5(op);
+    }
+
+    public int[] getArrayPosSign(String example){
+        return crtArray_posSign(example);
+    }
+    public float[] getArrayN(String example){
+        return arrFromNumber(getArrayPosSign(example),example);
+    }
+
+    public char[] getArrayS(String example){
+        return new Help_Methods().giveSign(getArrayPosSign(example), example);
     }
 
 

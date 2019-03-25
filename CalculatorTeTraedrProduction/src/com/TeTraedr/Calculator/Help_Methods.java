@@ -1,7 +1,12 @@
 package com.TeTraedr.Calculator;
 
 
+import java.sql.SQLOutput;
+
 public class Help_Methods {
+
+
+
 
 
     public void print_array(float[] array) {
@@ -131,18 +136,30 @@ public class Help_Methods {
 
 
 
-    public String checkexample(String example) {
-        Help_Methods hlp = new Help_Methods();
+    public String controlexample(String example) {
+        float[] arraynumbers = new Calculator().getArrayN(example);
+        char[] arraysigns = new Calculator().getArrayS(example);
+/*        print_array(arraynumbers);
+        print_array(arraysigns);*/
+
+
         char[] c = example.toCharArray();
+          if (arraynumbers.length != (arraysigns.length+1)){
+            return "Помилка в кільк.знаків";
+        }
+
         if (c[0] == '(' && c[example.length() - 1] == ')') {
             example = example.substring(1, example.length() - 1);
             return example;
         }
 
 
-        if (hlp.Brackets(example).length == 0){
+
+        else if (Brackets(example).length == 0){
             return "Помилка в дужках";
         }
+
+
 
 
 

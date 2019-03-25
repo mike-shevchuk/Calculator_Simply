@@ -71,13 +71,13 @@ class Windows implements ActionListener {
         Border tborder = BorderFactory.createLineBorder(Color.ORANGE, 1);
         textarea.setBorder(tborder);
         textarea2.setBorder(tborder);
-        Font font = new Font("Arial", Font.BOLD, 33);
+        Font font = new Font("Arial", Font.BOLD, 30);
         textarea.setFont(font);
         textarea2.setFont(font);
         textarea.setForeground(Color.GREEN);
         textarea2.setForeground(Color.GREEN);
-        textarea.setPreferredSize(new Dimension(2, 10));
-        textarea2.setPreferredSize(new Dimension(2, 10));
+        textarea.setPreferredSize(new Dimension(5, 10));
+        textarea2.setPreferredSize(new Dimension(5, 10));
         textarea.setLineWrap(true);
         textarea2.setLineWrap(true);
 
@@ -266,8 +266,8 @@ class Windows implements ActionListener {
             }
         if (source == buttonequal) {
             String op = textarea.getText();
-            if (op !=new Help_Methods().checkexample(op)){
-                textarea2.setText(new Help_Methods().checkexample(op));
+            if (op !=new Help_Methods().controlexample(op)){
+                textarea2.setText(new Help_Methods().controlexample(op));
             }
             Calculator cl = new Calculator();
 
