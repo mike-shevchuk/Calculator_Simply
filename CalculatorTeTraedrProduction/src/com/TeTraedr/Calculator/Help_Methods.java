@@ -1,12 +1,6 @@
 package com.TeTraedr.Calculator;
 
-
-import java.sql.SQLOutput;
-
 public class Help_Methods {
-
-
-
 
 
     public void print_array(float[] array) {
@@ -110,11 +104,10 @@ public class Help_Methods {
                 if (Cop[i] == ')') count2++;
             }
         if (count1 == count2) length = count1;
-        else if (count1>count2){
+        else if (count1 > count2) {
             System.out.println("Faul");
             return new Object[0];
-        }
-        else if (count1<count2){
+        } else if (count1 < count2) {
             System.out.println("Faul");
             return new Object[0];
         }
@@ -124,8 +117,6 @@ public class Help_Methods {
             if (Cop[i] == '(') farray[f++] = i;
             else if (Cop[i] == ')') sarray[s++] = i;
         }
-   /*print_array(farray);
-    print_array(sarray);*/
         return new Object[]{farray, sarray};
     }
 
@@ -133,7 +124,6 @@ public class Help_Methods {
         if (sign == '+' || sign == '-' || sign == '*' || sign == '/') return true;
         else return false;
     }
-
 
 
     public String controlexample(String example) {
@@ -144,24 +134,16 @@ public class Help_Methods {
 
 
         char[] c = example.toCharArray();
-          if (arraynumbers.length != (arraysigns.length+1)){
+        if (arraynumbers.length != (arraysigns.length + 1)) {
             return "Помилка в кільк.знаків";
         }
 
         if (c[0] == '(' && c[example.length() - 1] == ')') {
             example = example.substring(1, example.length() - 1);
             return example;
-        }
-
-
-
-        else if (Brackets(example).length == 0){
+        } else if (Brackets(example).length == 0) {
             return "Помилка в дужках";
         }
-
-
-
-
 
 
         return example;

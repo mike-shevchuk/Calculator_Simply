@@ -21,17 +21,18 @@ public class Priority_Of_Processing {
                 aN = hlp.delPos(aN, i);
                 aS = hlp.delPos(aS, i);
             }
+
         return new Calculator().gear_1(aN, aS);
     }
 
-    public float result(String op){
+    public float result(String op) {
         Calculator calc = new Calculator();
         Help_Methods hlp = new Help_Methods();
         String r = brakeBrackets(op, (int[]) hlp.Brackets(op)[0], (int[]) hlp.Brackets(op)[1]);
         return calc.gear_2(r);
     }
 
-    private String brakeBrackets(String op, int[] openBrackets, int[] closeBrackets)  {
+    private String brakeBrackets(String op, int[] openBrackets, int[] closeBrackets) {
         Help_Methods hlp = new Help_Methods();
         Calculator calc = new Calculator();
         int[] farray = openBrackets;
@@ -43,7 +44,6 @@ public class Priority_Of_Processing {
             if (sarray[i] > farray[j]) {
                 numb = calc.gear_2(hlp.cutStr(op, farray[j], sarray[i]));//calc 3+6+1 and five float 10
                 test = hlp.crtStr(op, farray[j], sarray[i], Float.toString(numb));
-                System.out.println("test--->" + test);
                 farray = (int[]) hlp.Brackets(test)[0];
                 sarray = (int[]) hlp.Brackets(test)[1];
                 return brakeBrackets(test, farray, sarray);
@@ -51,7 +51,6 @@ public class Priority_Of_Processing {
         }
         return test;
     }
-
 
 
 }

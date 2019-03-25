@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" line="32" />
+    <bookmark url="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" line="22" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c02471a-1c67-468e-a093-d4553b121c52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/CalculatorTeTraedrProduction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/CalculatorTeTraedrProduction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/images/iconfinder_Cross_2001870.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/images/iconfinder_Minus_2001871.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,49 +20,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Operators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-              <folding>
-                <element signature="method#priority#0;class#Priority_Of_Processing#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
-              <folding>
-                <element signature="method#test4#0;class#Calculator#0" />
-                <element signature="e#5326#5327#0" expanded="true" />
-                <element signature="e#5348#5349#0" expanded="true" />
-                <element signature="e#5439#5440#0" expanded="true" />
-                <element signature="e#5476#5477#0" expanded="true" />
-                <element signature="e#5411#5412#0" expanded="true" />
-                <element signature="e#5477#5478#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="414">
+              <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -74,10 +31,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+            <state relative-caret-position="-5767">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding>
-                <element signature="e#9467#9887#1" />
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="method#test5#0;class#Calculator#0" />
+                <element signature="e#4681#4682#0" expanded="true" />
+                <element signature="e#4713#4714#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,13 +57,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="138" column="50" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+            <state relative-caret-position="1679">
+              <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+              <folding>
+                <element signature="method#print_array#0;class#Help_Methods#0" />
+                <element signature="method#print_array#1;class#Help_Methods#0" />
+                <element signature="method#print_array#1;class#Help_Methods#0" />
+                <element signature="method#delPos#0;class#Help_Methods#0" />
+                <element signature="method#delPos#1;class#Help_Methods#0" />
+                <element signature="method#delPos#2;class#Help_Methods#0" />
+                <element signature="method#checkConditionSign#0;class#Help_Methods#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>split</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,10 +85,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" />
+        <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" />
       </list>
     </option>
@@ -156,7 +141,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553522149816" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553529709294" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -211,12 +196,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553506578078</updated>
-      <workItem from="1553506584244" duration="15091000" />
+      <workItem from="1553506584244" duration="22025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15091000" />
+    <option name="totallyTimeSpent" value="22025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -227,7 +212,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32985386" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -237,7 +222,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32985386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -264,12 +249,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/res/images/iconfinder_Cross_2001870.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -278,49 +259,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java">
+    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <element signature="method#priority#0;class#Priority_Of_Processing#0" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/res/images/iconfinder_Cross_2001870.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="138" column="50" selection-start-line="138" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+        <state relative-caret-position="1679">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+          <folding>
+            <element signature="method#print_array#0;class#Help_Methods#0" />
+            <element signature="method#print_array#1;class#Help_Methods#0" />
+            <element signature="method#print_array#1;class#Help_Methods#0" />
+            <element signature="method#delPos#0;class#Help_Methods#0" />
+            <element signature="method#delPos#1;class#Help_Methods#0" />
+            <element signature="method#delPos#2;class#Help_Methods#0" />
+            <element signature="method#checkConditionSign#0;class#Help_Methods#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="112" column="13" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+        <state relative-caret-position="23">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding>
-            <element signature="method#test4#0;class#Calculator#0" />
-            <element signature="e#5326#5327#0" expanded="true" />
-            <element signature="e#5348#5349#0" expanded="true" />
-            <element signature="e#5439#5440#0" expanded="true" />
-            <element signature="e#5476#5477#0" expanded="true" />
-            <element signature="e#5411#5412#0" expanded="true" />
-            <element signature="e#5477#5478#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="method#test5#0;class#Calculator#0" />
+            <element signature="e#4681#4682#0" expanded="true" />
+            <element signature="e#4713#4714#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
-          <folding>
-            <element signature="e#9467#9887#1" />
-          </folding>
+        <state relative-caret-position="-5767">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>

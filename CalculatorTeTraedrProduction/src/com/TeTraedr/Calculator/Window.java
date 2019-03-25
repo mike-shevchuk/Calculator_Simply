@@ -103,7 +103,7 @@ class Windows implements ActionListener {
         panel.add(buttonequal);
         panel.add(buttonca);
 //        String dir = "..\\..\\res";
- //       String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
+        //       String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
         String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
 
         button0.setPreferredSize(new Dimension(50, 50));
@@ -266,7 +266,7 @@ class Windows implements ActionListener {
             }
         if (source == buttonequal) {
             String op = textarea.getText();
-            if (op !=new Help_Methods().controlexample(op)){
+            if (op != new Help_Methods().controlexample(op)) {
                 textarea2.setText(new Help_Methods().controlexample(op));
             }
             Calculator cl = new Calculator();
