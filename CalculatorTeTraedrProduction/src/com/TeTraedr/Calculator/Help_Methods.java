@@ -129,8 +129,6 @@ public class Help_Methods {
     public String controlexample(String example) {
         float[] arraynumbers = new Calculator().getArrayN(example);
         char[] arraysigns = new Calculator().getArrayS(example);
-/*        print_array(arraynumbers);
-        print_array(arraysigns);*/
 
 
         char[] c = example.toCharArray();

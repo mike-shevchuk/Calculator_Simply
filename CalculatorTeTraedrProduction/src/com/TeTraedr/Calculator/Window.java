@@ -14,7 +14,6 @@ class Windows implements ActionListener {
     JPanel panel = new JPanel();
     JTextArea textarea = new JTextArea(2, 10);
     JTextArea textarea2 = new JTextArea(1, 10);
-    JScrollPane scroll = new JScrollPane(textarea);
 
     JButton button0 = new JButton();
     JButton button1 = new JButton();
@@ -37,9 +36,6 @@ class Windows implements ActionListener {
     JButton buttonequal = new JButton();
     JButton buttonLeftbracket = new JButton();
     JButton buttonRightbracket = new JButton();
-
-    String str;
-    double result;
 
 
     public Windows() {
@@ -102,105 +98,123 @@ class Windows implements ActionListener {
         panel.add(buttondot);
         panel.add(buttonequal);
         panel.add(buttonca);
-//        String dir = "..\\..\\res";
-        //       String dir = "C:\\Users\\mikls\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
-        String dir = "D:\\workspace\\git\\Calculator_Simply\\CalculatorTeTraedrProduction\\res";
 
-        button0.setPreferredSize(new Dimension(50, 50));
-        button0.setIcon(new ImageIcon(dir + "\\icons-0.png"));
-        button0.setBackground(Color.RED);
-        button0.setToolTipText("number 0");
 
         buttonsub.setPreferredSize(new Dimension(50, 50));
-        buttonsub.setIcon(new ImageIcon(dir + "\\icons-sub.png"));
+        Icon iconsub = new ImageIcon("res\\icons-sub.png");
+        buttonsub.setIcon(iconsub);
         buttonsub.setBackground(Color.YELLOW);
         buttonsub.setToolTipText("subtraction");
 
         buttonmul.setPreferredSize(new Dimension(50, 50));
-        buttonmul.setIcon(new ImageIcon(dir + "\\icons-multi.png"));
+        Icon iconmulti = new ImageIcon("res\\icons-multi.png");
+        buttonmul.setIcon(iconmulti);
         buttonmul.setBackground(Color.YELLOW);
         buttonmul.setToolTipText("multiplication");
 
         buttondiv.setPreferredSize(new Dimension(50, 50));
-        buttondiv.setIcon(new ImageIcon(dir + "\\icons-div.png"));
+        Icon icondiv = new ImageIcon("res\\icons-div.png");
+        buttondiv.setIcon(icondiv);
         buttondiv.setBackground(Color.YELLOW);
         buttondiv.setToolTipText("division");
 
         buttondot.setPreferredSize(new Dimension(50, 50));
-        buttondot.setIcon(new ImageIcon(dir + "\\icons-dot.png"));
+        Icon icondot = new ImageIcon("res\\icons-dot.png");
+        buttondot.setIcon(icondot);
         buttondot.setBackground(Color.YELLOW);
         buttondot.setToolTipText("dot");
 
-        button1.setPreferredSize(new Dimension(50, 50));
-        button1.setIcon(new ImageIcon(dir + "\\icons-1.png"));
-        button1.setBackground(Color.RED);
-
-
-        button2.setPreferredSize(new Dimension(50, 50));
-        button2.setIcon(new ImageIcon(dir + "\\icons-2.png"));
-        button2.setBackground(Color.RED);
-
-
-        button3.setPreferredSize(new Dimension(50, 50));
-        button3.setIcon(new ImageIcon(dir + "\\icons-3.png"));
-        button3.setBackground(Color.RED);
-
-
-        button4.setPreferredSize(new Dimension(50, 50));
-        button4.setIcon(new ImageIcon(dir + "\\icons-4.png"));
-        button4.setBackground(Color.RED);
-
-
-        button5.setPreferredSize(new Dimension(50, 50));
-        button5.setIcon(new ImageIcon(dir + "\\icons-5.png"));
-        button5.setBackground(Color.RED);
-
-
-        button6.setPreferredSize(new Dimension(50, 50));
-        button6.setIcon(new ImageIcon(dir + "\\icons-6.png"));
-        button6.setBackground(Color.RED);
-
-
-        button7.setPreferredSize(new Dimension(50, 50));
-        button7.setIcon(new ImageIcon(dir + "\\icons-7.png"));
-        button7.setBackground(Color.RED);
-
-
-        button8.setPreferredSize(new Dimension(50, 50));
-        button8.setIcon(new ImageIcon(dir + "\\icons-8.png"));
-        button8.setBackground(Color.RED);
-
-
-        button9.setPreferredSize(new Dimension(50, 50));
-        button9.setIcon(new ImageIcon(dir + "\\icons-9.png"));
-        button9.setBackground(Color.RED);
-
         buttonequal.setPreferredSize(new Dimension(50, 50));
-        buttonequal.setIcon(new ImageIcon(dir + "\\icons-equal.png"));
+        Icon iconequal = new ImageIcon("res\\icons-equal.png");
+        buttonequal.setIcon(iconequal);
         buttonequal.setBackground(Color.YELLOW);
         buttonequal.setToolTipText("equal");
 
         buttonadd.setPreferredSize(new Dimension(50, 50));
-        buttonadd.setIcon(new ImageIcon(dir + "\\icons-add.png"));
+        Icon iconadd = new ImageIcon("res\\icons-add.png");
+        buttonadd.setIcon(iconadd);
         buttonadd.setBackground(Color.YELLOW);
         buttonadd.setToolTipText("add");
 
         buttonclear.setPreferredSize(new Dimension(110, 50));
-        buttonclear.setIcon(new ImageIcon(dir + "\\icons-clear.png"));
+        Icon iconclear = new ImageIcon("res\\icons-clear.png");
+        buttonclear.setIcon(iconclear);
         buttonclear.setBackground(Color.YELLOW);
         buttonclear.setToolTipText("backspace");
 
         buttonca.setPreferredSize(new Dimension(270, 50));
-        buttonca.setIcon(new ImageIcon(dir + "\\icons-c.png"));
+        Icon iconca = new ImageIcon("res\\icons-c.png");
+        buttonca.setIcon(iconca);
         buttonca.setBackground(Color.YELLOW);
         buttonca.setToolTipText("Clean All(CLS)");
 
+        button0.setPreferredSize(new Dimension(50, 50));
+        Icon icon0 = new ImageIcon("res\\icons-0.png");
+        button0.setIcon(icon0);
+        button0.setBackground(Color.RED);
+        button0.setToolTipText("number 0");
+
+        button1.setPreferredSize(new Dimension(50, 50));
+        Icon icon1 = new ImageIcon("res\\icons-1.png");
+        button1.setIcon(icon1);
+        button1.setBackground(Color.RED);
+
+
+        button2.setPreferredSize(new Dimension(50, 50));
+        Icon icon2 = new ImageIcon("res\\icons-2.png");
+        button2.setIcon(icon2);
+        button2.setBackground(Color.RED);
+
+
+        button3.setPreferredSize(new Dimension(50, 50));
+        Icon icon3 = new ImageIcon("res\\icons-3.png");
+        button3.setIcon(icon3);
+        button3.setBackground(Color.RED);
+
+
+        button4.setPreferredSize(new Dimension(50, 50));
+        Icon icon4 = new ImageIcon("res\\icons-4.png");
+        button4.setIcon(icon4);
+        button4.setBackground(Color.RED);
+
+
+        button5.setPreferredSize(new Dimension(50, 50));
+        Icon icon5 = new ImageIcon("res\\icons-5.png");
+        button5.setIcon(icon5);
+        button5.setBackground(Color.RED);
+
+
+        button6.setPreferredSize(new Dimension(50, 50));
+        Icon icon6 = new ImageIcon("res\\icons-6.png");
+        button6.setIcon(icon6);
+        button6.setBackground(Color.RED);
+
+
+        button7.setPreferredSize(new Dimension(50, 50));
+        Icon icon7 = new ImageIcon("res\\icons-7.png");
+        button7.setIcon(icon7);
+        button7.setBackground(Color.RED);
+
+
+        button8.setPreferredSize(new Dimension(50, 50));
+        Icon icon8 = new ImageIcon("res\\icons-8.png");
+        button8.setIcon(icon8);
+        button8.setBackground(Color.RED);
+
+
+        button9.setPreferredSize(new Dimension(50, 50));
+        Icon icon9 = new ImageIcon("res\\icons-9.png");
+        button9.setIcon(icon9);
+        button9.setBackground(Color.RED);
+
         buttonLeftbracket.setPreferredSize(new Dimension(50, 50));
-        buttonLeftbracket.setIcon(new ImageIcon(dir + "\\icons-lbracket.png"));
+        Icon iconLbracket = new ImageIcon("res\\icons-lbracket.png");
+        buttonLeftbracket.setIcon(iconLbracket);
         buttonLeftbracket.setBackground(Color.RED);
 
         buttonRightbracket.setPreferredSize(new Dimension(50, 50));
-        buttonRightbracket.setIcon(new ImageIcon(dir + "\\icons-rbracket.png"));
+        Icon iconRbracket = new ImageIcon("res\\icons-rbracket.png");
+        buttonRightbracket.setIcon(iconRbracket);
         buttonRightbracket.setBackground(Color.RED);
 
 
@@ -253,7 +267,6 @@ class Windows implements ActionListener {
         if (source == buttondiv) textarea.append("/");
         if (source == buttonclear)
             if (textarea.getText().length() > 0) {
-//                textarea.append(String.valueOf(textarea.getText().length()-2));
                 try {
                     textarea.setText(textarea.getText(0, (textarea.getText().length() - 1)));
                 } catch (BadLocationException e1) {
@@ -279,10 +292,7 @@ class Windows implements ActionListener {
 
 
         }
-
     }
-
-
 }
 
 

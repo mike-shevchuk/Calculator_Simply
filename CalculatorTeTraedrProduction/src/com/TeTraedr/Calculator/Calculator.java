@@ -110,13 +110,13 @@ public class Calculator {
     }
 
 
-    public float gear_1(float[] arrayN, char[] arrayC) {
+    public float gear(float[] arrayN, char[] arrayC) {
         if (arrayC.length == 0 && arrayN.length == 1)
             return arrayN[0];
         return result(arrayN, arrayC);
     }
 
-    public float gear_2(String op) {
+    public float gear_4(String op) {
         return gear4(op);
     }
 

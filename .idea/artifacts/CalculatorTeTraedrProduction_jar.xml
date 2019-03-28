@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CalculatorTeTraedrProduction:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CalculatorTeTraedrProduction_jar</output-path>
+    <root id="archive" name="CalculatorTeTraedrProduction.jar">
+      <element id="module-output" name="CalculatorTeTraedrProduction" />
+    </root>
+  </artifact>
+</component>

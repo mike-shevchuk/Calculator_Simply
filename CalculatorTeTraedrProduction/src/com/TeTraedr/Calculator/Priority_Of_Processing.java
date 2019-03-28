@@ -22,14 +22,14 @@ public class Priority_Of_Processing {
                 aS = hlp.delPos(aS, i);
             }
 
-        return new Calculator().gear_1(aN, aS);
+        return new Calculator().gear(aN, aS);
     }
 
     public float result(String op) {
         Calculator calc = new Calculator();
         Help_Methods hlp = new Help_Methods();
         String r = brakeBrackets(op, (int[]) hlp.Brackets(op)[0], (int[]) hlp.Brackets(op)[1]);
-        return calc.gear_2(r);
+        return calc.gear_4(r);
     }
 
     private String brakeBrackets(String op, int[] openBrackets, int[] closeBrackets) {
@@ -37,12 +37,12 @@ public class Priority_Of_Processing {
         Calculator calc = new Calculator();
         int[] farray = openBrackets;
         int[] sarray = closeBrackets;
-        float numb = 0;
+        float numb ;
         String test = op;
 
         for (int j = farray.length - 1, i = 0; j >= 0; j--) {
             if (sarray[i] > farray[j]) {
-                numb = calc.gear_2(hlp.cutStr(op, farray[j], sarray[i]));//calc 3+6+1 and five float 10
+                numb = calc.gear_4(hlp.cutStr(op, farray[j], sarray[i]));//calc 3+6+1 and five float 10
                 test = hlp.crtStr(op, farray[j], sarray[i], Float.toString(numb));
                 farray = (int[]) hlp.Brackets(test)[0];
                 sarray = (int[]) hlp.Brackets(test)[1];
