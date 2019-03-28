@@ -44,6 +44,12 @@ class Windows implements ActionListener {
     JButton buttonRightbracket = new JButton();
 
     boolean sound = true;
+
+    public void setSound(boolean s) {
+        if (s) sound = true;
+        else sound = false;
+    }
+
     public void playSound(String soundName) {
         if (sound) {
             try {
