@@ -6,6 +6,10 @@ import javax.swing.text.BadLocationException;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.AudioSystem;
 
 
 class Windows implements ActionListener {
@@ -39,6 +43,21 @@ class Windows implements ActionListener {
     JButton buttonLeftbracket = new JButton();
     JButton buttonRightbracket = new JButton();
 
+    public void playSound(String soundName)
+    {
+        try
+        {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile( ));
+            Clip clip = AudioSystem.getClip( );
+            clip.open(audioInputStream);
+            clip.start( );
+        }
+        catch(Exception ex)
+        {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace( );
+        }
+    }
 
     public Windows() {
         frame.setSize(340, 475);
@@ -256,26 +275,27 @@ class Windows implements ActionListener {
         Object source = e.getSource();
         if (source == buttonca) {
             textarea.setText("");
+            playSound("sound\\Computer Mouse.aif");
             textarea2.setText("Введіть приклад");
             buttonca.setBackground(Color.YELLOW);
         }
-        if (source == button0) textarea.append("0");
-        if (source == button1) textarea.append("1");
-        if (source == button2) textarea.append("2");
-        if (source == button3) textarea.append("3");
-        if (source == button4) textarea.append("4");
-        if (source == button5) textarea.append("5");
-        if (source == button6) textarea.append("6");
-        if (source == button7) textarea.append("7");
-        if (source == button8) textarea.append("8");
-        if (source == button9) textarea.append("9");
-        if (source == buttonLeftbracket) textarea.append("(");
-        if (source == buttonRightbracket) textarea.append(")");
-        if (source == buttondot) textarea.append(".");
-        if (source == buttonadd) textarea.append("+");
-        if (source == buttonsub) textarea.append("-");
-        if (source == buttonmul) textarea.append("*");
-        if (source == buttondiv) textarea.append("/");
+        if (source == button0) {textarea.append("0");  playSound("sound\\07070092.wav");}
+        if (source == button1) {textarea.append("1");  playSound("sound\\07070092.wav");}
+        if (source == button2) {textarea.append("2");  playSound("sound\\07070092.wav");}
+        if (source == button3) {textarea.append("3");  playSound("sound\\07070092.wav");}
+        if (source == button4) {textarea.append("4");  playSound("sound\\07070092.wav");}
+        if (source == button5) {textarea.append("5");  playSound("sound\\07070092.wav");}
+        if (source == button6) {textarea.append("6");  playSound("sound\\07070092.wav");}
+        if (source == button7) {textarea.append("7");  playSound("sound\\07070092.wav");}
+        if (source == button8) {textarea.append("8");  playSound("sound\\07070092.wav");}
+        if (source == button9) {textarea.append("9");  playSound("sound\\07070092.wav");}
+        if (source == buttonLeftbracket) {textarea.append("(");     playSound("sound\\Computer Mouse.aif");}
+        if (source == buttonRightbracket) {textarea.append(")");     playSound("sound\\Computer Mouse.aif");}
+        if (source == buttondot) {textarea.append(".");  playSound("sound\\07070092.wav");}
+        if (source == buttonadd) {textarea.append("+");  playSound("sound\\07070092.wav");}
+        if (source == buttonsub) {textarea.append("-");  playSound("sound\\07070092.wav");}
+        if (source == buttonmul) {textarea.append("*");  playSound("sound\\07070092.wav");}
+        if (source == buttondiv) {textarea.append("/");  playSound("sound\\07070092.wav");}
         if (source == buttonclear)
             if (textarea.getText().length() > 0) {
                 try {
@@ -283,6 +303,7 @@ class Windows implements ActionListener {
                 } catch (BadLocationException e1) {
                     e1.printStackTrace();
                 }
+                playSound("sound\\07070092.wav");
                 if (textarea.getText().length() == 0) {
                     textarea2.setText("Введіть приклад");
                     buttonca.setBackground(Color.YELLOW);
@@ -293,6 +314,7 @@ class Windows implements ActionListener {
             if (op != new Help_Methods().controlexample(op)) {
                 textarea2.setText(new Help_Methods().controlexample(op));
             }
+            playSound("sound\\Computer Mouse.aif");
             Calculator cl = new Calculator();
 
             textarea.append("=");
