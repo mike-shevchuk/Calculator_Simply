@@ -14,6 +14,8 @@ class Windows implements ActionListener {
     JPanel panel = new JPanel();
     JTextArea textarea = new JTextArea(2, 10);
     JTextArea textarea2 = new JTextArea(1, 10);
+    JScrollPane scroll ;
+
 
     JButton button0 = new JButton();
     JButton button1 = new JButton();
@@ -51,18 +53,27 @@ class Windows implements ActionListener {
         panel.setBackground(Color.GRAY);
         Border border = BorderFactory.createLineBorder(Color.GREEN, 5);
 
+
+
         panel.add(textarea2);
-        panel.add(textarea);
+
+        scroll = new JScrollPane(textarea);
+        scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        panel.add(scroll);
+
         panel.setBorder(border);
+
 
 
         textarea2.setBackground(Color.BLACK);
         textarea2.setToolTipText("Press 'Enter'");
         textarea2.setVisible(true);
-
         textarea.setBackground(Color.BLACK);
         textarea.setToolTipText("Press 'Enter'");
         textarea.setVisible(true);
+
+
+
 
         Border tborder = BorderFactory.createLineBorder(Color.ORANGE, 1);
         textarea.setBorder(tborder);
@@ -72,7 +83,7 @@ class Windows implements ActionListener {
         textarea2.setFont(font);
         textarea.setForeground(Color.GREEN);
         textarea2.setForeground(Color.GREEN);
-        textarea.setPreferredSize(new Dimension(5, 10));
+        textarea.setPreferredSize(new Dimension(5, 1000));
         textarea2.setPreferredSize(new Dimension(5, 10));
         textarea.setLineWrap(true);
         textarea2.setLineWrap(true);

@@ -7,65 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bce83e1c-0f1c-435b-9fd3-1af03c8f15d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/CalculatorTeTraedrProduction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/CalculatorTeTraedrProduction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/Screenshot_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/Screenshot_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/iconfinder_Cross_2001870.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/iconfinder_Minus_2001871.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/iconfinder_Plus_2001887.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-div.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-division.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-equal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-lbracket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-multi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-rbracket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/res/icons-sub.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/Screenshot_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/Screenshot_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/iconfinder_Cross_2001870.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/iconfinder_Minus_2001871.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/iconfinder_Plus_2001887.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-clear.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-div.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-division.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-dot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-equal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-lbracket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-multi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-rbracket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorTeTraedrProduction/icons-sub.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+            <state relative-caret-position="-477">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1633">
+              <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -107,10 +58,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Main.java" />
-        <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Help_Methods.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Calculator.java" />
         <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java" />
+        <option value="$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java" />
       </list>
     </option>
   </component>
@@ -162,7 +113,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553763480661" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553766837081" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -212,12 +163,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553761049182</updated>
-      <workItem from="1553761061250" duration="2401000" />
+      <workItem from="1553761061250" duration="4863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2401000" />
+    <option name="totallyTimeSpent" value="4863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -228,7 +179,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -238,7 +189,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32985386" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32985386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -258,13 +209,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Operators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -299,8 +243,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Priority_Of_Processing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        <state relative-caret-position="-477">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CalculatorTeTraedrProduction/src/com/TeTraedr/Calculator/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="85" column="53" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="53" />
         </state>
       </provider>
     </entry>
