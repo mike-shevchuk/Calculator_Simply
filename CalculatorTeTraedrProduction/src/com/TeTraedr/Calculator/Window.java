@@ -18,7 +18,7 @@ class Windows implements ActionListener {
     JPanel panel = new JPanel();
     JTextArea textarea = new JTextArea(2, 10);
     JTextArea textarea2 = new JTextArea(1, 10);
-    JScrollPane scroll ;
+    JScrollPane scroll;
 
 
     JButton button0 = new JButton();
@@ -43,19 +43,18 @@ class Windows implements ActionListener {
     JButton buttonLeftbracket = new JButton();
     JButton buttonRightbracket = new JButton();
 
-    public void playSound(String soundName)
-    {
-        try
-        {
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile( ));
-            Clip clip = AudioSystem.getClip( );
-            clip.open(audioInputStream);
-            clip.start( );
-        }
-        catch(Exception ex)
-        {
-            System.out.println("Error with playing sound.");
-            ex.printStackTrace( );
+    boolean onoff = false;
+    public void playSound(String soundName ,boolean onf) {
+        if (onoff) {
+            try {
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile());
+                Clip clip = AudioSystem.getClip();
+                clip.open(audioInputStream);
+                clip.start();
+            } catch (Exception ex) {
+                System.out.println("Error with playing sound.");
+                ex.printStackTrace();
+            }
         }
     }
 
@@ -73,7 +72,6 @@ class Windows implements ActionListener {
         Border border = BorderFactory.createLineBorder(Color.GREEN, 5);
 
 
-
         panel.add(textarea2);
 
         scroll = new JScrollPane(textarea);
@@ -83,15 +81,12 @@ class Windows implements ActionListener {
         panel.setBorder(border);
 
 
-
         textarea2.setBackground(Color.BLACK);
         textarea2.setToolTipText("Press 'Enter'");
         textarea2.setVisible(true);
         textarea.setBackground(Color.BLACK);
         textarea.setToolTipText("Press 'Enter'");
         textarea.setVisible(true);
-
-
 
 
         Border tborder = BorderFactory.createLineBorder(Color.ORANGE, 1);
@@ -275,27 +270,79 @@ class Windows implements ActionListener {
         Object source = e.getSource();
         if (source == buttonca) {
             textarea.setText("");
-            playSound("sound\\Computer Mouse.aif");
+            playSound("sound\\Computer Mouse.aif",onoff);
             textarea2.setText("Введіть приклад");
             buttonca.setBackground(Color.YELLOW);
         }
-        if (source == button0) {textarea.append("0");  playSound("sound\\07070092.wav");}
-        if (source == button1) {textarea.append("1");  playSound("sound\\07070092.wav");}
-        if (source == button2) {textarea.append("2");  playSound("sound\\07070092.wav");}
-        if (source == button3) {textarea.append("3");  playSound("sound\\07070092.wav");}
-        if (source == button4) {textarea.append("4");  playSound("sound\\07070092.wav");}
-        if (source == button5) {textarea.append("5");  playSound("sound\\07070092.wav");}
-        if (source == button6) {textarea.append("6");  playSound("sound\\07070092.wav");}
-        if (source == button7) {textarea.append("7");  playSound("sound\\07070092.wav");}
-        if (source == button8) {textarea.append("8");  playSound("sound\\07070092.wav");}
-        if (source == button9) {textarea.append("9");  playSound("sound\\07070092.wav");}
-        if (source == buttonLeftbracket) {textarea.append("(");     playSound("sound\\Computer Mouse.aif");}
-        if (source == buttonRightbracket) {textarea.append(")");     playSound("sound\\Computer Mouse.aif");}
-        if (source == buttondot) {textarea.append(".");  playSound("sound\\07070092.wav");}
-        if (source == buttonadd) {textarea.append("+");  playSound("sound\\07070092.wav");}
-        if (source == buttonsub) {textarea.append("-");  playSound("sound\\07070092.wav");}
-        if (source == buttonmul) {textarea.append("*");  playSound("sound\\07070092.wav");}
-        if (source == buttondiv) {textarea.append("/");  playSound("sound\\07070092.wav");}
+        if (source == button0) {
+            textarea.append("0");
+
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button1) {
+            textarea.append("1");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button2) {
+            textarea.append("2");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button3) {
+            textarea.append("3");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button4) {
+            textarea.append("4");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button5) {
+            textarea.append("5");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button6) {
+            textarea.append("6");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button7) {
+            textarea.append("7");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button8) {
+            textarea.append("8");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == button9) {
+            textarea.append("9");
+            playSound("sound\\07070092.wav",onoff);
+        }
+        if (source == buttonLeftbracket) {
+            textarea.append("(");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttonRightbracket) {
+            textarea.append(")");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttondot) {
+            textarea.append(".");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttonadd) {
+            textarea.append("+");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttonsub) {
+            textarea.append("-");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttonmul) {
+            textarea.append("*");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
+        if (source == buttondiv) {
+            textarea.append("/");
+            playSound("sound\\Computer Mouse.aif",onoff);
+        }
         if (source == buttonclear)
             if (textarea.getText().length() > 0) {
                 try {
@@ -303,7 +350,7 @@ class Windows implements ActionListener {
                 } catch (BadLocationException e1) {
                     e1.printStackTrace();
                 }
-                playSound("sound\\07070092.wav");
+                playSound("sound\\Computer Mouse.aif",onoff);
                 if (textarea.getText().length() == 0) {
                     textarea2.setText("Введіть приклад");
                     buttonca.setBackground(Color.YELLOW);
@@ -314,7 +361,7 @@ class Windows implements ActionListener {
             if (op != new Help_Methods().controlexample(op)) {
                 textarea2.setText(new Help_Methods().controlexample(op));
             }
-            playSound("sound\\Computer Mouse.aif");
+            playSound("sound\\Computer Mouse.aif",onoff);
             Calculator cl = new Calculator();
 
             textarea.append("=");
