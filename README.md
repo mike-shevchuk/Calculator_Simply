@@ -1,3 +1,3 @@
 # Calculator_Simply
-Calculator-that discribe all step in methods
+Calculator with love
 
